@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
+  <diagram name="Page-1" id="cmwvDnx-5Ij4J3nkibQT">
+    <mxGraphModel dx="889" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="ellipse;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="286" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="Idle" vertex="1">
+          <mxGeometry height="40" width="43" x="272" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="WaitingForMoney" vertex="1">
+          <mxGeometry height="40" width="138" x="309" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="MoneyReceived" vertex="1">
+          <mxGeometry height="40" width="125" x="230" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="TicketDispensed" vertex="1">
+          <mxGeometry height="40" width="132" x="69" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="TransactionCanceled" vertex="1">
+          <mxGeometry height="40" width="164" x="369" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="2" style="curved=1;startArrow=none;;exitX=0.53;exitY=1;entryX=0.5;entryY=0;" target="3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="3" style="curved=1;startArrow=none;;exitX=1;exitY=0.86;entryX=0.5;entryY=0;" target="4" value="Выбор билета">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="378" y="149" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="4" style="curved=1;startArrow=none;;exitX=0.28;exitY=1;entryX=0.5;entryY=0;" target="5" value="Внесение денег">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="293" y="263" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="5" style="curved=1;startArrow=none;;exitX=0.3;exitY=1;entryX=0.73;entryY=0;" target="6" value="Выдача билета">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="219" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="4" style="curved=1;startArrow=none;;exitX=0.8;exitY=1;entryX=0.6;entryY=0;" target="7" value="Отмена транзакции">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="497" y="263" />
+              <mxPoint x="497" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="5" style="curved=1;startArrow=none;;exitX=0.71;exitY=1;entryX=0.32;entryY=0;" target="7" value="Отмена транзакции">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="366" y="377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="6" style="curved=1;startArrow=none;;exitX=0.4;exitY=0;entryX=0;entryY=0.66;" target="3" value="Завершение транзакции">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="98" y="377" />
+              <mxPoint x="98" y="149" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
