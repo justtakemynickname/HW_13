@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
+  <diagram name="Page-1" id="nGQb1BKbvxVr3CYrJNdQ">
+    <mxGraphModel dx="1000" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="systemBoundary" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;dashed=1;fillColor=#ffffff;" value="Система управления сетью библиотек" vertex="1">
+          <mxGeometry height="600" width="500" x="280" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ucРегистрацияПользователя" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Регистрация пользователя" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ucПросмотрПоискКниг" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Просмотр и поиск книг" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ucБронированиеКниги" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Бронирование книги" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ucОтменаБронирования" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Отмена бронирования" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ucПросмотрИсторииБронирований" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Просмотр истории бронирований" vertex="1">
+          <mxGeometry height="60" width="160" x="250" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ucПроверкаДоступностиКниги" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Проверка доступности книги" vertex="1">
+          <mxGeometry height="60" width="160" x="250" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ucУправлениеКнигами" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Управление книгами (добавление/удаление)" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ucВыдачаВозвратКниг" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Выдача/возврат книг" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ucПросмотрАктивныхБронирований" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Просмотр активных бронирований" vertex="1">
+          <mxGeometry height="60" width="160" x="250" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ucУправлениеФилиалами" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Управление филиалами" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="ucУправлениеУчетнымиЗаписями" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Управление учетными записями" vertex="1">
+          <mxGeometry height="60" width="160" x="250" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ucПросмотрАналитики" parent="systemBoundary" style="ellipse;whiteSpace=wrap;html=1;" value="Просмотр аналитики" vertex="1">
+          <mxGeometry height="60" width="160" x="250" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="actorЧитатель" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Читатель" vertex="1">
+          <mxGeometry height="100" width="70" x="70" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="actorБиблиотекарь" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Библиотекарь" vertex="1">
+          <mxGeometry height="100" width="70" x="70" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="actorАдминистратор" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Администратор" vertex="1">
+          <mxGeometry height="100" width="70" x="70" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="genБиблиотекарьЧитатель" edge="1" parent="1" source="actorБиблиотекарь" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" target="actorЧитатель" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="genАдминистраторБиблиотекарь" edge="1" parent="1" source="actorАдминистратор" style="endArrow=block;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;" target="actorБиблиотекарь" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocЧитательРегистрация" edge="1" parent="1" source="actorЧитатель" style="endArrow=none;html=1;" target="ucРегистрацияПользователя" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocЧитательПросмотрПоиск" edge="1" parent="1" source="actorЧитатель" style="endArrow=none;html=1;" target="ucПросмотрПоискКниг" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocЧитательБронирование" edge="1" parent="1" source="actorЧитатель" style="endArrow=none;html=1;" target="ucБронированиеКниги" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocЧитательОтменаБронирования" edge="1" parent="1" source="actorЧитатель" style="endArrow=none;html=1;" target="ucОтменаБронирования" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocЧитательПросмотрИстории" edge="1" parent="1" source="actorЧитатель" style="endArrow=none;html=1;" target="ucПросмотрИсторииБронирований" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocБиблиотекарьУправлениеКнигами" edge="1" parent="1" source="actorБиблиотекарь" style="endArrow=none;html=1;" target="ucУправлениеКнигами" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocБиблиотекарьВыдачаВозврат" edge="1" parent="1" source="actorБиблиотекарь" style="endArrow=none;html=1;" target="ucВыдачаВозвратКниг" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocБиблиотекарьПросмотрАктивных" edge="1" parent="1" source="actorБиблиотекарь" style="endArrow=none;html=1;" target="ucПросмотрАктивныхБронирований" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocАдминистраторУправлениеФилиалами" edge="1" parent="1" source="actorАдминистратор" style="endArrow=none;html=1;" target="ucУправлениеФилиалами" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocАдминистраторУправлениеУчетными" edge="1" parent="1" source="actorАдминистратор" style="endArrow=none;html=1;" target="ucУправлениеУчетнымиЗаписями" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assocАдминистраторПросмотрАналитики" edge="1" parent="1" source="actorАдминистратор" style="endArrow=none;html=1;" target="ucПросмотрАналитики" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="includeБронированиеПроверка" edge="1" parent="1" source="ucБронированиеКниги" style="endArrow=open;endFill=1;dashed=1;html=1;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;" target="ucПроверкаДоступностиКниги" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="includeОтменаПросмотрИстории" edge="1" parent="1" source="ucОтменаБронирования" style="endArrow=open;endFill=1;dashed=1;html=1;labelBackgroundColor=#ffffff;align=center;verticalAlign=middle;" target="ucПросмотрИсторииБронирований" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
